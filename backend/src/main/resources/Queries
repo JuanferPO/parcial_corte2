@@ -1,0 +1,27 @@
+Cliente: http://localhost:9000/restaurante/cliente
+{
+    "nombre":"-----",
+    "telefono":"#####"
+}
+Producto: http://localhost:9000/restaurante/producto
+{
+    "nombre":"-----",
+    "valorUnitario":"#####"
+}
+Pedido: http://localhost:9000/restaurante/pedido
+{
+    "fecha":"####-##-##",
+    "cliente":{
+        "id":"#####"
+    }
+}
+Detalle Pedido: http://localhost:9000/restaurante/detallePedido
+{
+    "cantidad":"#####",
+    "pedido":{
+        "id":"#####"
+    }
+    "producto":{
+        "id":"#####"
+    }
+}
