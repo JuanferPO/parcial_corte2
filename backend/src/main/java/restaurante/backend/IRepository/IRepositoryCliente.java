@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import restaurante.backend.Document.Cliente;
 
 @Repository
-public interface IRepositoryCliente extends MongoRepository<Cliente,Long> {
+public interface IRepositoryCliente extends MongoRepository<Cliente,String> {
 }

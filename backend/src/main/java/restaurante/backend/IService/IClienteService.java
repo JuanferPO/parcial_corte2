@@ -7,8 +7,8 @@ import java.util.Optional;
 
 public interface IClienteService {
     public List<Cliente> findAll();
-    public Optional<Cliente> findById(Long id);
+    public Optional<Cliente> findById(String id);
     public Cliente save(Cliente cliente);
-    public void update(Cliente cliente, Long id);
-    public void delete(Long id);
+    public void update(Cliente cliente, String id);
+    public void delete(String id);
 }

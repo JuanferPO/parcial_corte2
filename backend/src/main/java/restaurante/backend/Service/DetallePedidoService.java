@@ -17,7 +17,7 @@ public class DetallePedidoService implements IDetallePedidoService{
         return repository.findAll();
     }
     @Override
-    public Optional<DetallePedido> findById(Long id){
+    public Optional<DetallePedido> findById(String id){
         return repository.findById(id);
     }
     @Override
@@ -25,7 +25,7 @@ public class DetallePedidoService implements IDetallePedidoService{
         return repository.save(detallePedido);
     }
     @Override
-    public void update(DetallePedido detallePedido, Long id){
+    public void update(DetallePedido detallePedido, String id){
         Optional<DetallePedido> ps = repository.findById(id);
         if(!ps.isEmpty()){
             DetallePedido detallePedidoUpdate = new DetallePedido();
@@ -38,7 +38,7 @@ public class DetallePedidoService implements IDetallePedidoService{
         }
     }
     @Override
-    public void delete(Long id){
+    public void delete(String id){
         repository.deleteById(id);
     }
 }

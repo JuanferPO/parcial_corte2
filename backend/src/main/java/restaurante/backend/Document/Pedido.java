@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Document(collection = "pedido")
 public class Pedido {
     @Id
-    private Long id;
+    private String id;
     @Field
     private LocalDate fecha;
     @DBRef

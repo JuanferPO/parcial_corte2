@@ -1,27 +1,32 @@
 Cliente: http://localhost:9000/restaurante/cliente
 {
-    "nombre":"-----",
-    "telefono":"#####"
+    "nombre":"Juan Pérez",
+    "telefono":"1234"
 }
 Producto: http://localhost:9000/restaurante/producto
 {
-    "nombre":"-----",
-    "valorUnitario":"#####"
+    "nombre":"Hamburguesa",
+    "valorUnitario":"10000"
 }
 Pedido: http://localhost:9000/restaurante/pedido
 {
-    "fecha":"####-##-##",
+    "fecha":"23-04-2024",
     "cliente":{
-        "id":"#####"
+        "id":"1"
     }
 }
 Detalle Pedido: http://localhost:9000/restaurante/detallePedido
 {
-    "cantidad":"#####",
+    "cantidad":"2",
     "pedido":{
-        "id":"#####"
+        "id":"1"
     }
     "producto":{
-        "id":"#####"
+        "id":"1"
     }
 }
+Buscar todos: GET
+Buscar por ID: GET, .../id
+Agregar: POST, json con los nuevos datos
+Modificar: PUT, .../id, json con los nuevos datos
+Eliminar: DELETE, .../id

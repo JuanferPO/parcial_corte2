@@ -17,7 +17,7 @@ public class ProductoService implements IProductoService{
         return repository.findAll();
     }
     @Override
-    public Optional<Producto> findById(Long id){
+    public Optional<Producto> findById(String id){
         return repository.findById(id);
     }
     @Override
@@ -25,7 +25,7 @@ public class ProductoService implements IProductoService{
         return repository.save(producto);
     }
     @Override
-    public void update(Producto producto, Long id){
+    public void update(Producto producto, String id){
         Optional<Producto> ps = repository.findById(id);
         if(!ps.isEmpty()){
             Producto productoUpdate = new Producto();
@@ -37,7 +37,7 @@ public class ProductoService implements IProductoService{
         }
     }
     @Override
-    public void delete(Long id){
+    public void delete(String id){
         repository.deleteById(id);
     }
 }

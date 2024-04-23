@@ -18,7 +18,7 @@ public class ClienteService implements IClienteService{
         return repository.findAll();
     }
     @Override
-    public Optional<Cliente> findById(Long id){
+    public Optional<Cliente> findById(String id){
         return repository.findById(id);
     }
     @Override
@@ -26,7 +26,7 @@ public class ClienteService implements IClienteService{
         return repository.save(cliente);
     }
     @Override
-    public void update(Cliente cliente, Long id){
+    public void update(Cliente cliente, String id){
         Optional<Cliente> ps = repository.findById(id);
         if(!ps.isEmpty()){
             Cliente clienteUpdate = new Cliente();
@@ -38,7 +38,7 @@ public class ClienteService implements IClienteService{
         }
     }
     @Override
-    public void delete(Long id){
+    public void delete(String id){
         repository.deleteById(id);
     }
 }

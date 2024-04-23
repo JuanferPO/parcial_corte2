@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "cliente")
 public class Cliente {
     @Id
-    private Long id;
+    private String id;
     @Field
     private String nombre;
     @Field

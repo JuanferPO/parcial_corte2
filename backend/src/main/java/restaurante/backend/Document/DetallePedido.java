@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "detalle-pedido")
 public class DetallePedido {
     @Id
-    private Long id;
+    private String id;
     @Field
     private Integer cantidad;
     @DBRef

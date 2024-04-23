@@ -17,7 +17,7 @@ public class PedidoService implements IPedidoService{
         return repository.findAll();
     }
     @Override
-    public Optional<Pedido> findById(Long id){
+    public Optional<Pedido> findById(String id){
         return repository.findById(id);
     }
     @Override
@@ -25,7 +25,7 @@ public class PedidoService implements IPedidoService{
         return repository.save(pedido);
     }
     @Override
-    public void update(Pedido pedido, Long id){
+    public void update(Pedido pedido, String id){
         Optional<Pedido> ps = repository.findById(id);
         if(!ps.isEmpty()){
             Pedido pedidoUpdate = new Pedido();
@@ -37,7 +37,7 @@ public class PedidoService implements IPedidoService{
         }
     }
     @Override
-    public void delete(Long id){
+    public void delete(String id){
         repository.deleteById(id);
     }
 }

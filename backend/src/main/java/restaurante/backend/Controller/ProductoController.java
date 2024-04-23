@@ -21,7 +21,7 @@ public class ProductoController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Producto> findById(@PathVariable Long id){
+    public Optional<Producto> findById(@PathVariable String id){
         return service.findById(id);
     }
 
@@ -31,12 +31,12 @@ public class ProductoController {
     }
 
     @PutMapping("/{id}")
-    public void update(@RequestBody Producto producto, @PathVariable Long id){
+    public void update(@RequestBody Producto producto, @PathVariable String id){
         service.update(producto, id);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id){
+    public void delete(@PathVariable String id){
         service.delete(id);
     }
 }

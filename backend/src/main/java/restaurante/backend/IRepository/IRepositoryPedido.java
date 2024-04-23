@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import restaurante.backend.Document.Pedido;
 
 @Repository
-public interface IRepositoryPedido extends MongoRepository<Pedido,Long> {
+public interface IRepositoryPedido extends MongoRepository<Pedido,String> {
 }

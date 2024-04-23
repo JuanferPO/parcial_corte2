@@ -7,8 +7,8 @@ import java.util.Optional;
 
 public interface IPedidoService {
     public List<Pedido> findAll();
-    public Optional<Pedido> findById(Long id);
+    public Optional<Pedido> findById(String id);
     public Pedido save(Pedido pedido);
-    public void update(Pedido pedido, Long id);
-    public void delete(Long id);
+    public void update(Pedido pedido, String id);
+    public void delete(String id);
 }

@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Document(collection = "producto")
 public class Producto {
     @Id
-    private Long id;
+    private String id;
     @Field
     private String nombre;
     @Field

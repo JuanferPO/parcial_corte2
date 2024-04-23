@@ -21,7 +21,7 @@ public class DetallePedidoController {
     }
 
     @GetMapping("/{id}")
-    public Optional<DetallePedido> findById(@PathVariable Long id){
+    public Optional<DetallePedido> findById(@PathVariable String id){
         return service.findById(id);
     }
 
@@ -31,12 +31,12 @@ public class DetallePedidoController {
     }
 
     @PutMapping("/{id}")
-    public void update(@RequestBody DetallePedido detallePedido, @PathVariable Long id){
+    public void update(@RequestBody DetallePedido detallePedido, @PathVariable String id){
         service.update(detallePedido, id);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id){
+    public void delete(@PathVariable String id){
         service.delete(id);
     }
 }
