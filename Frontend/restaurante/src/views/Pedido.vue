@@ -2,20 +2,20 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Factura</ion-title>
+        <ion-title>Pedido</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-label>
-          <ion-title size="large">Factura</ion-title>
+          <ion-title size="large">Pedido</ion-title>
         </ion-label>
       </ion-header>
 
       <ion-item>
         <ion-label>
-          <h2>Factura No. 1234</h2>
+          <h2>Pedido No. 1234</h2>
           <p>Cliente: Juan Pérez</p>
           <p>Fecha: 23-04-2024</p>
         </ion-label>

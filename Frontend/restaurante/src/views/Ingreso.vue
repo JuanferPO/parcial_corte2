@@ -15,7 +15,7 @@
 
       <ion-item>
         <ion-label>
-          <h2>Factura No. 1234</h2>
+          <h2>Pedido No. 1234</h2>
           <p>Cliente: Juan Pérez</p>
           <p>Fecha: 23-04-2024</p>
         </ion-label>
@@ -38,7 +38,7 @@
       <ion-grid>
         <ion-row class="ion-justify-content-center">
           <ion-col size="auto">
-            <ion-button>Agregar a la factura</ion-button>
+            <ion-button>Agregar al pedido</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>

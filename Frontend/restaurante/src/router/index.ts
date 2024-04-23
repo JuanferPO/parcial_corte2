@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import Ingreso from '../views/Ingreso.vue'
-import Factura from '../views/Factura.vue'
+import Pedido from '../views/Pedido.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -16,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/find',
     name: 'Factura',
-    component: Factura
+    component: Pedido
   }
 ]
 
