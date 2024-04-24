@@ -31,4 +31,8 @@ public class DetallePedido {
     public void setProducto(Producto producto) {
         this.producto = producto;
     }
+
+    public String getId() {
+        return id;
+    }
 }

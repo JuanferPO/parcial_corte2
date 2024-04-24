@@ -30,4 +30,8 @@ public class Producto {
     public void setValorUnitario(BigDecimal valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
+
+    public String getId() {
+        return id;
+    }
 }
